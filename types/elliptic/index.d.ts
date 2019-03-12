@@ -212,7 +212,7 @@ export namespace ec {
         getPublic(compact: boolean, enc?: string): any; // ?
         getPublic(enc?: string): any; // ?
         getPrivate(enc?: 'hex'): Buffer | BN | string;
-        derive(pub: any): any; // ?
+        derive(pub: any): BN;
         sign(msg: BNInput, enc: string, options?: SignOptions): Signature;
         sign(msg: BNInput, options?: SignOptions): Signature;
         verify(msg: BNInput, signature: Signature | SignatureOptions): boolean;
